@@ -1,0 +1,28 @@
+.header {
+    background-image: url(../images/Cover_photo.png);
+    height: 100vh;
+    background-position: 85% center;
+    background-size: cover;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &__title {
+        color: white;
+        letter-spacing: -1.5px;
+        font-weight: 700;
+        height: 80px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        @include headerTitle
+    }
+
+    &__bottom {
+        padding-bottom: 88px;
+        @include constentPaddingInline;
+    }
+}

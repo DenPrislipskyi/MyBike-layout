@@ -1,0 +1,18 @@
+.icon {
+  display: block;
+  @include sizeIcons;
+
+  &__phone {
+    background-image: url(../images/Icon-Phone-call.png);
+  }
+    
+  &__burger {
+    background-image: url(../images/Icon-Burger-menu.png);
+  }
+    
+  &__close {
+    background-image: url(../images/Buttons.png);
+    width: 24px;
+    height: 24px;
+  }
+}

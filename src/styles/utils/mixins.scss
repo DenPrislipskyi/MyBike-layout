@@ -1,0 +1,67 @@
+@mixin onTablet{
+    @media (min-width: $table-min-width) {
+        @content;
+    }
+}
+
+@mixin constentPaddingInline() {
+    padding-inline: 20px;
+
+    @include onTablet {
+        padding-inline: 72px;
+    }
+}
+
+@mixin constentPaddingBlock() {
+    padding-block: 24px;
+
+    @include onTablet {
+        padding-block: 36px;
+    }
+}
+
+@mixin constentPaddingBottom() {
+    padding-bottom: 24px;
+
+    @include onTablet {
+        padding-bottom: 8px;
+    }
+}
+
+@mixin topBarLogo() {
+    width: 130px;
+    height: 38px;
+
+    @include onTablet() {
+        width: 187px;
+        height: 56px;
+    }
+}
+
+@mixin sizeIcons() {
+    width: 28px;
+    height: 28px;
+
+    @include onTablet() {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@mixin topBarGapIcons() {
+    gap: 24px;
+
+    @include onTablet() {
+        gap: 32px;
+    }
+}
+
+@mixin headerTitle() {
+    font-size: 36px;
+    line-height: 36px;
+
+    @include onTablet() {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}

@@ -1,0 +1,16 @@
+.top__bar {
+    @include constentPaddingBlock;
+    @include constentPaddingInline;
+    display: flex;
+    justify-content: space-between;
+
+    &__icons{
+        display: flex;
+        @include topBarGapIcons;
+    }
+
+    &__logo {
+        display: flex;
+        @include topBarLogo;
+    }
+}
