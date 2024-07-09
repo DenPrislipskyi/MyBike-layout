@@ -1,6 +1,11 @@
 .icon {
   display: block;
   @include sizeIcons;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
 
   &__phone {
     background-image: url(../images/Icon-Phone-call.png);
